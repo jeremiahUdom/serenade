@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Serenade | Shop</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="nav-bar">
+            <div class="container container-nav-flex">
+                <button class="mobile-nav-toggle" aria-expanded="false"></button>
+
+                <h1 class="logo"><a href="index.html">Serenade</a></h1>
+                <nav class="primary-nav-bar" data-visible="false">
+                    <div class="search">
+                        <button class="search-btn">
+                            <img src="./images/search-icon.png" alt="a search icon" class="search-btn-img">
+                        </button>
+                        <input type="text" name="search-bar" id="search-bar" placeholder="search...">
+                    </div>
+                    <ul class="nav-links-list">
+                        <li class="link"><a href="index.html" class="nav-link home">Home</a></li>
+                        <li class="link"><a href="shop.html" class="nav-link shop active">Shop</a></li>
+                        <li class="link"><a href="about.html" class="nav-link About">About</a></li>
+                        <li class="link"><a href="contact.html" class="nav-link contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="primary-nav-bar-overlay" data-visible="false"></div>
+                
+                <div class="icons">
+                    <div class="search">
+                        <button class="search-btn">
+                            <img src="./images/search-icon.png" alt="a search icon" class="search-btn-img">
+                        </button>
+                        <input type="text" name="search-bar" id="search-bar" placeholder="search....">
+                    </div>
+
+                    <button class="icon shopping-cart-btn">
+                        <img src="./images/shopping-cart-icon.png" alt="a shopping cart icon">
+                    </button>
+                    <a href="login.html" class="icon login-signup">
+                        <img src="./images/profile-icon.png" alt="a login/signup icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- shopping cart starts here -->
+    <div class="cart-overlay hide">
+        <div class="cart-display">
+            <button class="close-cart-btn">&times;</button>
+            <h3 class="cart-title">Cart</h3>
+
+            <div class="cart-items">
+
+            </div>
+
+            <div class="cart-checkout">
+                <p class="cart-checkout-total">Total : $ <span class="cart-checkout-amt">0.00</span></p>
+                <button class="checkout-button">Checkout</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- shopping carts ends here -->
+
+    <!-- <div class="shop-product-nav">
+        <nav class="secondary-nav">
+            <ul class="secondary-nav-links-list">
+                <li class="secondary-nav-list-item"><a href="index.html" class="secondary-link">Home</a></li> 
+                <p> > </p>
+                <li class="secondary-nav-list-item">Shop</li>
+            </ul>
+        </nav>
+
+        <h2 class="secondary-header">Products</h2>
+        <p class="secondary-subtext">Discover the Perfect Selection</p>
+    </div> -->
+
+    <div class="product-display">
+        <!-- product categories starts here -->
+        <div class="product-categories">
+            <div class="search">
+                <button class="search-btn">
+                    <img src="./images/search-icon.png" alt="a search icon" class="search-btn-img">
+                </button>
+                <input type="text" name="search-bar" id="search-bar" class="search-bar" placeholder="search...">
+            </div>
+
+            <div class="categories">
+                <h4 class="category-header">Categories</h4>
+                <ul class="category-list">
+                    <li class="category-item Living">Living Room</li>
+                    <li class="category-item dining">Dining Room</li>
+                    <li class="category-item bedroom">Bedroom</li>
+                    <li class="category-item kitchen">Kitchen</li>
+                </ul>
+            </div>
+        </div>
+        <!-- product categories ends here -->
+
+        <div class="product-display-grid">
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product1.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Aurora Sofa</h4>
+                <p class="product-short-description">Enchanting sofa</p>
+                <p class="product-price">$<span class="price">200.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product2.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Luminous Lamp</h4>
+                <p class="product-short-description">Ambient lamp</p>
+                <p class="product-price">$<span class="price">18.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product3.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Celestial Couch</h4>
+                <p class="product-short-description">Luxurious couch</p>
+                <p class="product-price">$<span class="price">250.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product4.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Zenith Chair</h4>
+                <p class="product-short-description">Cozy Embrace</p>
+                <p class="product-price">$<span class="price">25.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product5.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Radiant Lamp</h4>
+                <p class="product-short-description">Contemporary lamp</p>
+                <p class="product-price">$<span class="price">15.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product6.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Serene Lamp</h4>
+                <p class="product-short-description">Tranquil light</p>
+                <p class="product-price">$<span class="price">15.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product7.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Emberglow Armchair</h4>
+                <p class="product-short-description">Stylish armchair</p>
+                <p class="product-price">$<span class="price">30.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product8.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Serenity Chair</h4>
+                <p class="product-short-description">Tranquil chair</p>
+                <p class="product-price">$<span class="price">25.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product9.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Cosmo Rug</h4>
+                <p class="product-short-description">Celestial rug</p>
+                <p class="product-price">$<span class="price">28.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product10.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Oak Cabinet</h4>
+                <p class="product-short-description">Wooden cabinet</p>
+                <p class="product-price">$<span class="price">57.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product11.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Petite Vase</h4>
+                <p class="product-short-description">Charming vase</p>
+                <p class="product-price">$<span class="price">15.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product12.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Bloom Vase</h4>
+                <p class="product-short-description">Enchanting vase</p>
+                <p class="product-price">$<span class="price">12.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product14.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Canvas Art</h4>
+                <p class="product-short-description">Artistic allure</p>
+                <p class="product-price">$<span class="price">40.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product15.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Luxuriana</h4>
+                <p class="product-short-description">Nice stool</p>
+                <p class="product-price">$<span class="price">20.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product16.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Botanic Splendor</h4>
+                <p class="product-short-description">Aesthetic ellegance</p>
+                <p class="product-price">$<span class="price">10.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product17.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Ethereal Lamp</h4>
+                <p class="product-short-description">Mesmerizing glow</p>
+                <p class="product-price">$<span class="price">12.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product18.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Enchanta Plush</h4>
+                <p class="product-short-description">Luxurius carpet</p>
+                <p class="product-price">$<span class="price">45.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+        </div>  
+    </div>
+
+    <footer>
+        <div class="container container-flex">
+            <div class="footer-item address">
+                <h4>Our Address</h4>
+                <p>987 Willow Avenue, Apt 4B, Springville, Wonderland, 54321, Imaginaria</p>
+            </div>
+
+            <div class="footer-item contact-us">
+                <h4>Contact-us</h4>
+                <p>Phone <span>: +1 (555) 123-4567</span></p>
+                <p></span>Email <span>: info@serenade.int</span></p>
+            </div>
+
+            <div class="footer-item working-hours">
+                <h4>Working Hours</h4>
+                <p>Mon - Fri : 9:00 - 18:00</p>
+                <p>Sat : 10:00 - 16:00</p>
+                <p>Sun : Closed</p>
+            </div>
+
+            <div class="footer-item newsletter">
+                <h4>Stay in the loop</h4>
+                <p>Be the first to know about special offers and new products</p>
+                <input type="email" class="newsletter" placeholder="email address....">
+                <button class="newsletter-signup">sign up</button>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            <p> &copy; 2023 serenade, inc</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Serenade</title>
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="main-header">
+        <div class="nav-bar">
+            <div class="container container-nav-flex">
+                <button class="mobile-nav-toggle" aria-expanded="false"></button>
+
+                <h1 class="logo"><a href="index.html">Serenade</a></h1>
+                <nav class="primary-nav-bar" data-visible="false">
+                    <div class="search">
+                        <button class="search-btn">
+                            <img src="./images/search-icon.png" alt="a search icon" class="search-btn-img">
+                        </button>
+                        <input type="text" name="search-bar" id="search-bar" placeholder="search...">
+                    </div>
+                    <ul class="nav-links-list">
+                        <li class="link"><a href="index.html" class="nav-link home active">Home</a></li>
+                        <li class="link"><a href="shop.html" class="nav-link shop">Shop</a></li>
+                        <li class="link"><a href="about.html" class="nav-link About">About</a></li>
+                        <li class="link"><a href="contact.html" class="nav-link contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="primary-nav-bar-overlay" data-visible="false"></div>
+                
+                <div class="icons">
+                    <div class="search">
+                        <button class="search-btn">
+                            <img src="./images/search-icon.png" alt="a search icon" class="search-btn-img">
+                        </button>
+                        <input type="text" name="search-bar" id="search-bar" placeholder="search....">
+                    </div>
+
+                    <button class="icon shopping-cart-btn">
+                        <img src="./images/shopping-cart-icon.png" alt="a shopping cart icon">
+                    </button>
+                    <a href="./login.html" class="icon login-signup">
+                        <img src="./images/profile-icon.png" alt="a login/signup icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Hero-section starts here -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h2>Unleash Your Home's Potential.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                Recusandae ut soluta unde, saepe quas pariatur?
+            </p>
+            <a class="shop" href="shop.html">BUY NOW</a>
+        </div>
+    </div>
+    <!-- Hero-section ends here -->
+
+    <!-- qualities starts here -->
+    <div class="qualities">
+        <div class="container container-flex container-grid">
+            <div class="card quality">
+                <div class="card-item image">
+                    <img src="./images/high-quality-icon.png" alt="">
+                </div>
+                <div class="card-item text">
+                    <h4>High Quality</h4>
+                    <p>Crafted from top materials</p>
+                </div>
+            </div>
+            <div class="card warranty">
+                <div class="card-item image">
+                    <img src="./images/warranty-icon.png" alt="">
+                </div>
+                <div class="card-item text">
+                    <h4>warranty Protection</h4>
+                    <p>Over 3 years</p>
+                </div>
+            </div>
+            <div class="card shipping">
+                <div class="card-item image">
+                    <img src="./images/free-shipping-icon.png" alt="">
+                </div>
+                <div class="card-item text">
+                    <h4>Free Shipping</h4>
+                    <p>Order over $1000</p>
+                </div>
+            </div>
+            <div class="card support">
+                <div class="card-item image">
+                    <img src="./images/support-icon.png" alt="">
+                </div>
+                <div class="card-item text">
+                    <h4>24/7 Support</h4>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qualities ends here -->
+
+    <!-- categories starts here -->
+    <div class="categories hidden">
+        <div class="container">
+            <h2 class="center-text">Browse The Range</h2>
+            <p class="center-text">Discover our extensive collection of Exquisite Treasures.</p>
+        </div>
+        <div class="container container-flex category-grid">
+            <div class="category">
+                <div class="category-image">
+                    <a href="">
+                        <img src="./images/livingroom1.jpg" alt="an image of a living room">
+                    </a>
+                </div>
+                <div class="category-header">
+                    <a href="">
+                        <h3 class="center-text">Living room</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-image">
+                    <a href="">
+                        <img src="./images/dining-room.jpg" alt="an image of a dining room">
+                    </a>
+                </div>
+                <div class="category-header">
+                    <a href="">
+                        <h3 class="center-text">Dining room</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-image">
+                    <a href="">
+                        <img src="./images/kitchen.jpg" alt="an image of a kitchen">
+                    </a>
+                </div>
+                <div class="category-header">
+                    <a href="">
+                        <h3 class="center-text">Kitchen</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-image">
+                    <a href="">
+                        <img src="./images/bedroom.jpg" alt="an image of a bedroom">
+                    </a>
+                </div>
+                <div class="category-header">
+                    <a href="">
+                        <h3 class="center-text">Bedroom</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- qualities ends here -->
+
+    <!-- our projects starts here -->
+    <div class="our-projects hidden">
+        <div class="container">
+            <h2 class="center-text">Our Project</h2>
+        </div>
+
+        <div class="projects">
+            <div class="project flex-item">
+                <div class="project-img">
+                    <img src="./images/project1.jpg" alt="">
+                </div>
+                <div class="project-text">
+                    <h3>Luxury Abode</h3>
+                    <p> 
+                        Indulge in the epitome of luxury as Luxury Abode unveils a captivating 
+                        collection of artful home decor.
+                        Immerse yourself in opulence and elevate your
+                        living spaces with meticulously crafted furnishings and accents. 
+                    </p>
+                </div>
+            </div>
+            <div class="project flex-item">
+                <div class="project-img">
+                    <img src="./images/project2.jpg" alt="">
+                </div>
+                <div class="project-text left">
+                    <h3 class="project-title">Enchanted Interiors</h3>
+                    <p class="project-body">Enchanted Interiors 
+                        invites you to step into a world of timele
+                        ss elegance and transform your home into a 
+                        captivating sanctuary. Discover a curated 
+                        selection of exquisite home decor pieces 
+                        that exude charm and enchantment.
+                    </p>
+                </div>
+            </div>
+            <div class="project flex-item">
+                <div class="project-img">
+                    <img src="./images/project3.jpg" alt="">
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">The Artisan's Haven</h3>
+                    <p class="project-body">Step into The Artisan's
+                        Haven, where design mastery and artistic 
+                        vision converge to create extraordinary 
+                        living spaces. Explore our handpicked collection
+                        of home decor,  curated with a keen eye 
+                        for craftsmanship and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our project ends here -->
+
+    <!-- products starts here -->
+    <div class="products hidden">
+        <div class="container">
+            <h2 class="center-text">Our Products</h2>
+        </div>
+        <div class="container container-flex product-grid">
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product1.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Aurora Sofa</h4>
+                <p class="product-short-description">Enchanting sofa</p>
+                <p class="product-price">$<span class="price">200.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product2.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Luminous Lamp</h4>
+                <p class="product-short-description">Ambient lamp</p>
+                <p class="product-price">$<span class="price">18.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product3.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Celestial Couch</h4>
+                <p class="product-short-description">Luxurious couch</p>
+                <p class="product-price">$<span class="price">250.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product4.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Zenith Chair</h4>
+                <p class="product-short-description">Cozy Embrace</p>
+                <p class="product-price">$<span class="price">25.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+        </div>
+        <div class="container container-flex product-grid">
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product5.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Radiant Lamp</h4>
+                <p class="product-short-description">Contemporary lamp</p>
+                <p class="product-price">$<span class="price">15.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product6.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Serene Lamp</h4>
+                <p class="product-short-description">Tranquil light</p>
+                <p class="product-price">$<span class="price">15.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product7.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Emberglow Armchair</h4>
+                <p class="product-short-description">Stylish armchair</p>
+                <p class="product-price">$<span class="price">30.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./images/grid-product8.jpg" alt="" class="item-image">
+                </div>
+                <h4 class="product-name">Serenity Chair</h4>
+                <p class="product-short-description">Tranquil chair</p>
+                <p class="product-price">$<span class="price">25.99</span></p>
+                <button class="add-to-cart">Add</button>
+            </div>
+        </div>
+
+        <div class="container container-flex">
+            <a href="shop.html" class="show-more">Show More</a>
+        </div>
+    </div>
+    <!-- product ends here -->
+
+    <!-- shopping cart starts here -->
+    <div class="cart-overlay hide">
+        <div class="cart-display">
+            <button class="close-cart-btn">&times;</button>
+            <h3 class="cart-title">Cart</h3>
+
+            <div class="cart-items">
+
+            </div>
+
+            <div class="cart-checkout">
+                <p class="cart-checkout-total">Total : $ <span class="cart-checkout-amt">0.00</span></p>
+                <button class="checkout-button">Checkout</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- shopping carts ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="container container-flex">
+            <div class="footer-item address">
+                <h4>Our Address</h4>
+                <p>987 Willow Avenue, Apt 4B, Springville, Wonderland, 54321, Imaginaria</p>
+            </div>
+
+            <div class="footer-item contact-us">
+                <h4>Contact-us</h4>
+                <p>Phone <span>: +1 (555) 123-4567</span></p>
+                <p></span>Email <span>: info@serenade.int</span></p>
+            </div>
+
+            <div class="footer-item working-hours">
+                <h4>Working Hours</h4>
+                <p>Mon - Fri : 9:00 - 18:00</p>
+                <p>Sat : 10:00 - 16:00</p>
+                <p>Sun : Closed</p>
+            </div>
+
+            <div class="footer-item newsletter">
+                <h4>Stay in the loop</h4>
+                <p>Be the first to know about special offers and new products</p>
+                <input type="email" class="newsletter" placeholder="email address....">
+                <button class="newsletter-signup">sign up</button>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            <p> &copy; 2023 serenade, inc</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="main.js"></script>
+</body>
+</html>
